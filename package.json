@@ -1,48 +1,29 @@
 {
-  "author": "Paweł Mendelski <pawel.mendelski@coditorium.com>",
-  "name": "gulp-html-lint",
-  "version": "0.0.1",
+  "name": "@trigen/gulp-htmllint",
+  "version": "1.0.0",
   "description": "Gulp plugin for htmllint",
+  "author": "dangreen",
   "main": "index.js",
   "license": "MIT",
-  "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/coditorium/gulp-html-lint.git"
+    "url": "https://github.com/TrigenSoftware/gulp-htmllint.git"
   },
   "bugs": {
-    "url": "https://github.com/coditorium/gulp-html-lint/issues"
-  },
-  "scripts": {
-    "start": "index.js",
-    "test": "gulp lint test",
-    "ci": "gulp ci",
-    "coveralls": "cat build/test/coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
+    "url": "https://github.com/TrigenSoftware/gulp-htmllint/issues"
   },
   "keywords": [
-    "coditorium",
     "gulp",
-    "htmllint",
-    "html lint"
+    "gulpplugin",
+    "htmllint"
   ],
   "engines": {
     "node": ">=5.0.0"
   },
   "dependencies": {
-    "htmllint": "^0.3.0",
+    "chalk": "^1.1.3",
+    "htmllint": "^0.6.0",
     "text-table": "^0.2.0",
-    "through2": "^2.0.1"
-  },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "gulp-eslint": "^2.0.0",
-    "gulp-if": "^2.0.0",
-    "gulp-istanbul": "^0.10.4",
-    "gulp-mocha": "^2.2.0",
-    "gulp-sync": "^0.1.4",
-    "gulp-util": "^3.0.7",
-    "lodash": "^4.8.2",
-    "minimist": "^1.2.0",
-    "mocha-jenkins-reporter": "^0.2.2"
+    "through2": "^2.0.3"
   }
 }

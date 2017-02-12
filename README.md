@@ -1,12 +1,6 @@
-# gulp-html-lint
+# gulp-htmllint
 
-[![Travis build status](https://travis-ci.org/coditorium/gulp-html-lint.png?branch=master)](https://travis-ci.org/coditorium/gulp-html-lint)
-[![dependencies](https://david-dm.org/coditorium/gulp-html-lint.png)](https://david-dm.org/coditorium/gulp-html-lint)
-<!---
-[![Coverage Status](https://coveralls.io/repos/coditorium/gulp-html-lint/badge.svg)](https://coveralls.io/r/coditorium/gulp-html-lint)
---->
-
-[![NPM info](https://nodei.co/npm/read-config.png?downloads=true)](https://www.npmjs.com/package/read-config)
+[![NPM info](https://nodei.co/npm/%2540trigen%2Fgulp-htmllint.png?downloads=true)](https://www.npmjs.com/package/%2540trigen%2Fgulp-htmllint)
 
 This is a gulp plugin for [HTMLLint](https://github.com/htmllint/htmllint/).
 Its interface was created to be similar to [gulp-eslint](https://github.com/adametry/gulp-eslint).
@@ -14,21 +8,27 @@ Its interface was created to be similar to [gulp-eslint](https://github.com/adam
 ## Intallation
 
 ```sh
-npm install --save gulp-html-lint
+yarn add @trigen/gulp-htmllint
+```
+
+or 
+
+```sh
+npm install --save @trigen/gulp-htmllint
 ```
 
 ## Sample usage
 
 ```js
-var gulp = require('gulp'),
-	htmlLint = require('gulp-html-lint');
+const gulp = require('gulp'),
+	htmlLint = require('@trigen/gulp-htmllint');
 
-gulp.task('html', function() {
-    return gulp.src('site/**/*.html')
+gulp.task('html', () =>
+    gulp.src('site/**/*.html')
         .pipe(htmlLint())
         .pipe(htmlLint.format())
-        .pipe(htmlLint.failOnError());
-});
+        .pipe(htmlLint.failOnError())
+);
 ```
 
 ## API
@@ -66,24 +66,6 @@ Default **opts** values:
     limitIssues: `Number.MAX_VALUE`,
 }
 ```
-
-## Build process
-
-### Gulp commands
-
-- `gulp lint` - runs code checkstyle
-- `gulp test` - runs tests
-- `gulp test --file test/loader.js` - runs single test file `./test/loader.js`
-- `gulp` - alias for `gulp lint test`
-- `gulp test-cov` - runs instrumented tests, generates reports to `./build/test`
-- `gulp test-cov --file test/loader.js` - runs single instrumented test file `./test/loader.js`
-- `gulp clean` - removes `./build` folder
-- `gulp ci` - alias for `gulp clean lint test-cov`
-
-### NPM commands
-
-- `npm test` - alias for `gulp test`
-- `npm run ci` - alias for `gulp ci`
 
 ## License
 
