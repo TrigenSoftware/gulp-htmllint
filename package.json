@@ -1,7 +1,7 @@
 {
   "name": "@trigen/gulp-htmllint",
   "version": "1.0.0",
-  "description": "Gulp plugin for htmllint",
+  "description": "Gulp plugin for htmllint with interface similar to gulp-eslint.",
   "author": "dangreen",
   "main": "index.js",
   "license": "MIT",
