@@ -1,5 +1,5 @@
 {
-  "name": "@trigen/gulp-htmllint",
+  "name": "gulp-html-linter",
   "version": "1.0.0",
   "description": "Gulp plugin for htmllint with interface similar to gulp-eslint.",
   "author": "dangreen",
@@ -7,10 +7,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TrigenSoftware/gulp-htmllint.git"
+    "url": "https://github.com/TrigenSoftware/gulp-html-linter.git"
   },
   "bugs": {
-    "url": "https://github.com/TrigenSoftware/gulp-htmllint/issues"
+    "url": "https://github.com/TrigenSoftware/gulp-html-linter/issues"
   },
   "keywords": [
     "gulp",

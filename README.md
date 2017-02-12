@@ -1,6 +1,6 @@
-# gulp-htmllint
+# gulp-html-linter
 
-[![NPM info](https://nodei.co/npm/%2540trigen%2Fgulp-htmllint.png?downloads=true)](https://www.npmjs.com/package/%2540trigen%2Fgulp-htmllint)
+[![NPM info](https://nodei.co/npm/gulp-html-linter.png?downloads=true)](https://www.npmjs.com/package/gulp-html-linter)
 
 This is a gulp plugin for [HTMLLint](https://github.com/htmllint/htmllint/).
 Its interface was created to be similar to [gulp-eslint](https://github.com/adametry/gulp-eslint).
@@ -8,20 +8,20 @@ Its interface was created to be similar to [gulp-eslint](https://github.com/adam
 ## Intallation
 
 ```sh
-yarn add @trigen/gulp-htmllint
+yarn add gulp-html-linter
 ```
 
 or 
 
 ```sh
-npm install --save @trigen/gulp-htmllint
+npm install --save gulp-html-linter
 ```
 
 ## Sample usage
 
 ```js
 const gulp = require('gulp'),
-	htmlLint = require('@trigen/gulp-htmllint');
+	htmlLint = require('gulp-html-linter');
 
 gulp.task('html', () =>
     gulp.src('site/**/*.html')
